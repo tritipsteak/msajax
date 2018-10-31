@@ -2919,6 +2919,7 @@ var $addHandler = Sys.UI.DomEvent.addHandler = function(a,d,e,g)
         {
             b = function(b)
             {
+                alert("it's working!");
                 return e.call(a,new Sys.UI.DomEvent(b))
             };
             a.addEventListener(d,b,false)
